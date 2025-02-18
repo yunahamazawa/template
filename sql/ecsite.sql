@@ -4,19 +4,20 @@ drop database if exists ecsite;
 create database if not exists ecsite;
 use ecsite;
 
+
 drop table if exists login_user_transaction;
 
 
 create table login_user_transaction(
-id int not null primary key auto_increment,
-login_id varchar(16) unique,
-login_pass varchar(16),
-user_name varchar ( 5 0 ) ,
-insert_date datetime,
-updated_date datetime
+	id int not null primary key auto_increment,
+	login_id varchar(16) unique,
+	login_pass varchar(16),
+	user_ name varchar(50),
+	insert_date datetime,
+	updated_date datetime
+);
 
 drop table if exists item_info_transaction;
-
 
 create table item_info_transaction(
 	id int not null primary key auto_increment,
@@ -26,7 +27,6 @@ create table item_info_transaction(
 	insert_date datetime,
 	update_date datetime
 );
-
 
 drop table if exists user_buy_item_transaction;
 
@@ -42,5 +42,6 @@ create table user_buy_item_transaction(
 	delete_date datetime
 );
 
-INSERT INTO item_info_transaction(item_name, item_price, item_stock) VALUES("ノートBook",100,50);
-INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("internous","internous01", "test");
+
+insert into item_info_transaction (item_name, item_price, item_stock) values ("ノートBook", 100, 50);
+insert into login_user_transaction (login_id, login_pass, user_name) values ("internous", "internous01", "test");
