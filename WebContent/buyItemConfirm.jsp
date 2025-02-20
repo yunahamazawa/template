@@ -32,7 +32,7 @@
 		}
 
 		#top {
-			width: 780p x;
+			width: 780px;
 			margin: 30px auto;
 			border: 1px solid #333;
 		 }
@@ -83,14 +83,14 @@
 				</td>
 			</tr>
 			<tr>
-				<td>購入個数 </td>
+				<td>購入個数</td>
 				<td>
 					<s:property value= "session.stock" />
-						<span> 個 </span>
+						<span>個</span>
 				</td>
 			</tr>
 			<tr>
-				<td>支払い方法 </td>
+				<td>支払い方法</td>
 				<td> <s:property value= "session.pay" />
 				</td>
 			</tr>

@@ -54,10 +54,10 @@
 
 
 	#footer {
-	width: 100%;
-	height: 80px;
-	background-color: black;
-	clear: both;
+		width: 100%;
+		height: 80px;
+		background-color: black;
+		clear: both;
 	}
 	</style>
 </head>
@@ -67,20 +67,20 @@
 		</div>
 </div>
 <div id= "main" >
-<div id= "top">
-<p> Login </p>
-</div >
+	<div id= "top">
+		<p> Login </p>
+	</div >
 <div>
 	<h3>商品を購入する際にはログインをお願いします。</h3>
-	<s:form action="LoginAction">
-		<s:textfield name="loginUserId"/>
+	<s:form action= "LoginAction">
+		<s:textfield name= "loginUserId"/>
 		<s:password name = "login Password"/>
-		<s:submit value="ログイン"/>
+		<s:submit value= "ログイン"/>
 	</s:form>
 	<br/>
 	<div>
 		<span>新規ユーザー登録は
-			<a href='<s:url action="UserCreateAction"/>'>こちら
+			<a href='<s:url action= "UserCreateAction"/>'>こちら
 			</a>
 		</span>
 	</div></div>

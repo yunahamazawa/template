@@ -24,6 +24,7 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 			session.get("loginPassword").toString(),
 			session.get("userName").toString());
 		String result = SUCCESS;
+
 		return result;
 	}
 

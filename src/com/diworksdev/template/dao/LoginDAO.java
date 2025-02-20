@@ -4,6 +4,7 @@ package com.diworksdev.template.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
 import com.diworksdev.template.dto.LoginDTO;
 import com.diworksdev.template.util.DBConnector;
 
@@ -25,7 +26,8 @@ public class LoginDAO {
 
 			ResultSet resultSet = preparedStatement.executeQuery();
 
-			if(resultSet.next()) { loginDTO.setLoginId(resultSet.getString("login_id"));
+			if(resultSet.next()) {
+				loginDTO.setLoginId(resultSet.getString("login_id"));
 				loginDTO.setLoginPassword(resultSet.getString("login_pass"));
 				loginDTO.setUserName(resultSet.getString("user_name"));
 

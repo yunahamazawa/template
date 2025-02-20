@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8">
+<meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" />
 <meta http-equiv= "Content-Style-Type" content= "text/css" />
 <meta http-equiv= "Content-Script-Type" content= "text/javascript" />
 <meta http-equiv= "imagetoolbar" content=  "no" />
@@ -15,7 +15,7 @@
 <title>UserCreate画面</title>
 
 
-<style type="text/css">
+<style type= "text/css">
 
 
 	body {
@@ -34,7 +34,7 @@
 	}
 
 	#top {
-		width: 780p x;
+		width: 780px;
 		margin: 30px auto;
 		border: 1px solid #333;
 	 }
@@ -64,16 +64,16 @@
 </head>
 <body>
 	<div id = "header">
-		<div id="pr">
+		<div id= "pr">
 		</div>
 	</div>
-	<div id="main">
-		<div id="top">
+	<div id= "main">
+		<div id= "top">
 				<p> UserCreate </p>
 		</div>
 	</div>
 		<s:if test= "errorMessage != ''">
-			<s:property value= "errorMessage" escape="false" />
+			<s:property value= "errorMessage" escape= "false" />
 		</s:if>
 		<table>
 		<s:form action= "UserCreateConfirmAction">
@@ -82,23 +82,24 @@
 			<label>ログインID:</label>
 		</td>
 		<td>
-			<input type = "text" name = "loginUserId" value ="" />
+			<input type = "text" name = "loginUserId" value = "" />
 		</td>
-		<tr>
-			<td>
-				<label>ログインPASS:</label>
-			</td>
-			<td>
-				<input type = "text" name = "loginPassword" value ="" />
-		</tr>
-		<tr>
-			<td>
-				<label>ユーザー名</label>
-			</td>
+	<tr>
 		<td>
-			<input type = "text" name = "userName" value ="" />
-		</tr>
-		<s:submit value ="登録" />
+			<label>ログインPASS:</label>
+		</td>
+		<td>
+			<input type = "text" name = "loginPassword" value = "" />
+	</tr>
+	<tr>
+		<td>
+			<label>ユーザー名</label>
+		</td>
+		<td>
+			<input type = "text" name = "userName" value = "" />
+		</td>
+	</tr>
+		<s:submit value = "登録" />
 		</s:form>
 		</table>
 		<div>
@@ -106,10 +107,10 @@
 				<a href= '<s:url action= "HomeAction" />'>こちら
 		</a></div>
 
-<div id= "footer">
-	<div id = "pr">
-	</div>
-</div>
+		<div id= "footer">
+			<div id = "pr">
+			</div>
+		</div>
 
 </body>
 </html>

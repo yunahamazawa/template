@@ -26,9 +26,9 @@ public class BuyItemDAO {
 				buyItemDTO.setItemName(resultSet.getString("item_name"));
 				buyItemDTO.setItemPrice(resultSet.getString("item_price"));
 			}
-			} catch(Exception e) {
+		} catch(Exception e) {
 				e.printStackTrace();
-			}
+		}
 			return buyItemDTO;
 	}
 }

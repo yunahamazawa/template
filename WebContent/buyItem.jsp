@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8">
+<meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" />
 <meta http-equiv= "Content-Style-Type" content= "text/css"/>
 <meta http-equiv= "Content-Script-Type" content= "text/javascript"/>
 <meta http-equiv= "imagetoolbar" content= "no"/>
@@ -61,69 +61,69 @@
 <body>
 
 	<div id = "header">
-		<div id="pr">
+		<div id= "pr">
 	</div>
 	</div>
-	<div id="main" >
-		<div id="top">
+	<div id= "main" >
+		<div id= "top">
 			<p>BuyItem</p>
 		</div>
-	<div>
-	<s:form action = "BuyItemAction">
+		<div>
+			<s:form action = "BuyItemAction">
 		<table>
 			<tr>
 				<td>
 					<span>商品名</span>
 				</td>
 				<td>
-					<s:property value="session.buyItem_name"/>
-				</tr>
-				<tr>
-					<td>
-						<span>値 段 </span>
-					</td>
-					<td>
-						<s:property value="session.buyItem_price" />
-							<span>円 </span>
-				</tr>
-				<tr>
+					<s:property value= "session.buyItem_name" />
+			</tr>
+			<tr>
 				<td>
-				<span>在庫</span>
+						<span>値段</span>
 				</td>
 				<td>
-				<select name = "stock">
-				<option value = "1" selected = "selected">1</option>
-				<option value= "2">2</option>
-				<option value= "3"> 3</option>
-				<option value= "4">4</option>
-				<option value = "5"> 5</option>
-				</select>
-				</tr>
-				<tr>
+					<s:property value= "session.buyItem_price" />
+						<span>円</span>
+			</tr>
+			<tr>
 				<td>
-					<span>支払方法</span>
-					</td>
-					<td>
+						<span>在庫</span>
+				</td>
+				<td>
+					<select name = "stock">
+					<option value = "1" selected = "selected">1</option>
+					<option value= "2">2</option>
+					<option value= "3"> 3</option>
+					<option value= "4">4</option>
+					<option value = "5"> 5</option>
+					</select>
+			</tr>
+			<tr>
+				<td>
+						<span>支払方法</span>
+				</td>
+				<td>
 					<input type = "radio" name = "pay" value = "1" checked = "checked">現金払い
 					<input type = "radio" name = "pay" value = "2" checked = "checked"> クレジットカード
-					</tr>
-					<tr>
-					<td>
-						<s:submit value = "購入"/>
-						</td>
-						</tr>
-						</table>
-						</s:form action>
-						<div>
-							<span>前画面に戻る場合は</span>
-							<a href = '<s:url action = "HomeAction"/>'>こちら
-							</a>
-							</div>
-							</div>
-							</div>
-							<div id = "footer">
-								<div id = "pr">
-								</div>
-						</div>
+			</tr>
+			<tr>
+				<td>
+					<s:submit value = "購入"/>
+				</td>
+			</tr>
+		</table>
+			</s:form>
+			<div>
+					<span>前画面に戻る場合は</span>
+					<a href = '<s:url action = "HomeAction"/>'>こちら
+					</a>
+			</div>
+			</div>
+		</div>
+			<div id = "footer">
+					<div id = "pr">
+					</div>
+			</div>
 </body>
 </html>

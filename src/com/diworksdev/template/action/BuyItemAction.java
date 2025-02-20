@@ -24,13 +24,12 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		String payment;
 
 		if(pay.equals("1")) {
-			payment ="現金払い";
+			payment = "現金払い";
 			session.put("pay", payment);
 		} else {
-			payment ="クレジットカード";
+			payment = "クレジットカード";
 			session.put("pay", payment);
 		}
-
 		return result;
 	}
 
